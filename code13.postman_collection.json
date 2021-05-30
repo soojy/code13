@@ -1,0 +1,382 @@
+{
+	"variables": [],
+	"info": {
+		"name": "code13",
+		"_postman_id": "d5c71e73-0f4e-f6a1-9656-2e900a16d192",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nickname\" :\"test1\",\n\t\"email\" : \"test1@rmail.com\",\n\t\"password\" : \"test1\",\n\t\"password_confirmation\":\"test1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"test1@rmail.com\",\n\t\"password\" : \"test1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create video",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/video",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer PtxzNW0rSXP7NL5d8DuqW9W0YMBr3KPTlIBw",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test video",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"description": "",
+							"type": "file",
+							"src": "9convert.com - This Video Is 3 Seconds.mp4"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get videos",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/video",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer mSpSCPRKnWKs1K7Tl9YvEZldEaZh69IXrYRJ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test video",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get my videos",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/my-video",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer PtxzNW0rSXP7NL5d8DuqW9W0YMBr3KPTlIBw",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test video",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"description": "",
+							"type": "file",
+							"src": "9convert.com - This Video Is 3 Seconds.mp4"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "adminpanel",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/admin",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer mHpV7iBK2ppl2oMpVVq5Wl2ZVdtoUEonDwEh",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test video",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get video by id",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/video/4",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer mSpSCPRKnWKs1K7Tl9YvEZldEaZh69IXrYRJ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "test video",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "1",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "comment video",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/video/1/comment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer PtxzNW0rSXP7NL5d8DuqW9W0YMBr3KPTlIBw",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\" : \"test comment\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "like video",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/video/1/like",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer mHpV7iBK2ppl2oMpVVq5Wl2ZVdtoUEonDwEh",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"text\" : \"test comment\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "dislike video",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/video/1/like",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer mHpV7iBK2ppl2oMpVVq5Wl2ZVdtoUEonDwEh",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isDislike\" : \"1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "limit on video",
+			"request": {
+				"url": "http://127.0.0.1:8000/api/video/5",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ik4nrJnqp8YlWLyIS5x8nnMRsBSS2YdCvRlg",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"limits\" : \"1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
